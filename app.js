@@ -33,6 +33,6 @@ app.use("/api/v1/task", taskRouter)
 // custom error handler middleware
 app.use(errorMiddleware)
 
-app.get((req, res)=>{
+app.get("/",(req, res)=>{
     res.send("nice working")
 })
