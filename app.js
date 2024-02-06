@@ -19,7 +19,7 @@ config({
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "*",
+    origin: "http://localhost:5173",
     methods: ["GET", "HEAD", "POST", "PUT", "DELETE"],
     credentials: true,  //to send token in frontend
     optionsSuccessStatus: 200
