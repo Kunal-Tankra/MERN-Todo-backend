@@ -9,7 +9,7 @@ export const sendCookie = (user, res, message, statusCode = 200) => {
         httpOnly: true,
         maxAge: 15 * 60 * 1000, //15 min
         // sameSite: "none",
-        // secure: true
+        secure: true
     }).json({
         success: true,
         message
